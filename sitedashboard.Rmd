@@ -1,0 +1,72 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(flexdashboard)
+library (p8105.datasets)
+library(plotly)
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ data(instacart)
+instacart = instacart|>
+    mutate(day = factor(order_dow, levels = 0:6,
+                      labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")))
+
+instacart_df = instacart |>
+  count(aisle) |>
+  filter(n > 10000)|>
+  mutate(aisle = fct_reorder (aisle, n))|>
+  plot_ly (x = ~aisle, y = ~n, color = ~aisle, 
+           type = "bar", colors = "viridis")|>
+   layout (title = "Items ordered per aisle for aisles with more than 10000 items", 
+          xaxis = list(title =""),
+          yaxis = list(title = "Number of items"), 
+          showlegend = FALSE)
+ 
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+set.seed(1)
+
+instacart_df = instacart|>
+  sample_n(10000)|>
+  mutate (department = fct_reorder(department, order_hour_of_day))|>
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")|>
+  layout(title = "Items ordered across hours of the day by department",
+         xaxis = list(title=""), 
+         yaxis = list("Hour of the day"), 
+         showlegend = FALSE)
+
+
+```
+
+### Chart C
+
+```{r}
+instacart_df = instacart |>
+  distinct(order_id, day, order_hour_of_day)|>
+  count(day, order_hour_of_day)|>
+  plot_ly(x = ~order_hour_of_day, y = ~day, z = ~n, type="heatmap", colors = "viridis")|>
+  layout (title = "Number of orders by day and hour", 
+          xaxis = list(title = "Hour of the day"), 
+          yaxis = list(title=""))
+```
+
