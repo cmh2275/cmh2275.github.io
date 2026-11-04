@@ -6,6 +6,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Dashboard"
+      href: sitedashboard.html
     - text: "CUOT"
       href: https://www.vagelos.columbia.edu/education/academic-programs/programs-occupational-therapy
     - icon: fa-envelope fa-lg
