@@ -39,6 +39,8 @@ instacart_df = instacart |>
           xaxis = list(title =""),
           yaxis = list(title = "Number of items"), 
           showlegend = FALSE)
+
+instacart_df
  
 ```
 
@@ -59,6 +61,7 @@ instacart_df = instacart|>
          yaxis = list("Hour of the day"), 
          showlegend = FALSE)
 
+instacart_df
 
 ```
 
@@ -72,5 +75,8 @@ instacart_df = instacart |>
   layout (title = "Number of orders by day and hour", 
           xaxis = list(title = "Hour of the day"), 
           yaxis = list(title=""))
+
+instacart_df
+
 ```
 
