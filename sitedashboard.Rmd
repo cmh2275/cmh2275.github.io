@@ -1,9 +1,13 @@
 ---
-title: "Untitled"
+title: "Instacart Data Visualization"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    
+    navbar:
+      - { title: "Home", href: index.html, align: right }
+      - { title: "About", href: about.html, align: right }
 ---
 
 ```{r setup, include=FALSE}
