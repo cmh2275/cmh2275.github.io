@@ -3,7 +3,19 @@ title: "Cristin M. Holland, PhD, OTR/L"
 ---
 
 
-### Assistant Professor of Rehabilitation and Regenerative Medicine
-### Programs in Occupational Therapy
-### Columbia University 
+I am currently an Assistant Professor of Rehabilitation and Regenerative Medicine in the Programs in Occupational Therapy at Columbia University. 
 
+My research broadly investigates how the environment and sensorimotor and sensory-regulatory functions interact to impact social-emotional processes in maternal-offspring dyads across the perinatal period through early childhood. 
+
+I am particularly interested in how neurosensory pathways: 
+
+* influence mental health for pregnant and postpartum individuals
+* impact relational health across the maternal-offspring dyad in the perinatal period
+* are shaped by perinatal environments and may result in altered developmental trajectories to elevated likelihood of neurodevelopmental and mental health disorders in offspring
+
+
+The identification of early risk profiles associated with neurosensory pathways can be used to facilitate clinically relevant and targeted screening and monitoring tools, as well as lead to tailored, translatable, and scalable intervention approaches and strategies, for adverse mental health, relational health, and neurodevelopmental outcomes. Ultimately, this research aims to mitigate long-term consequences of altered neurosensory pathways across both generations.
+
+
+
+This site was made as part of requirements for the course P8105 Data Science I, taken as part of requirements for the completion of the MS-POR program. 
