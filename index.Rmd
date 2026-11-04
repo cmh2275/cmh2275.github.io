@@ -18,4 +18,5 @@ The identification of early risk profiles associated with neurosensory pathways 
 
 
 
-This site was made as part of requirements for the course P8105 Data Science I, taken as part of requirements for the completion of the MS-POR program. 
+
+This site was made as part of requirements for the course P8105 Data Science I, taken as part of requirements for the completion of the MS-POR degree. 
